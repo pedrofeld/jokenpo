@@ -37,6 +37,26 @@ class _GameState extends State<Game> {
         });
         break;
     }
+
+    if(
+      (userSelection == "rock" && appselection == "scissors") ||
+      (userSelection == "scissors" && appselection == "paper") ||
+      (userSelection == "paper" && appselection == "rock")
+    ){
+      setState(() {
+        this._message = "Congratulations! You win :)";
+      });
+    }else if (
+      (appselection == "rock" && userSelection == "scissors") ||
+      (appselection == "scissors" && userSelection == "paper") ||
+      (appselection == "paper" && userSelection == "rock")
+    ){
+      setState(() {
+        this._message = "Not this time. Try again!";
+      });
+    }else{
+      this._message = "We draw!";
+    }
   }
 
   @override
