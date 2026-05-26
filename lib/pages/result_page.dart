@@ -41,7 +41,7 @@ class ResultPage extends StatelessWidget {
               onPressed: () {
                 Navigator.pushNamedAndRemoveUntil(context, '/', (route) => false);
               },
-              child: const Text("Back to Home", style: TextStyle(fontSize: 18)),
+              child: const Text("Back to Home", style: TextStyle(fontSize: 18, color: Colors.black38)),
             ),
           ],
         ),
