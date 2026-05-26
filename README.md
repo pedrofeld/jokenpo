@@ -42,7 +42,7 @@ lib/
 1. Make sure you have [Flutter installed](https://docs.flutter.dev/get-started/install).
 2. Clone this repository:
    ```bash
-   git clone https://github.com/your-username/jokenpo-flutter.git
+   git clone https://github.com/pedrofeld/jokenpo.git
    ```
 3. Enter the project folder:
    ```bash
